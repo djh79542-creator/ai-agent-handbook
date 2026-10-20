@@ -24,7 +24,7 @@ Prompt 是接口契约：system 段是配置与不变量，user 段是请求参�
 
 > 动效结论：「消除歧义 + 定义可校验的输出」比措辞漂亮重要得多。
 
-网页版里这段可以逐帧播放：[「提示工程与结构化输出」动效图解](../index.html#/m/prompting)。
+网页版里这段可以逐帧播放：[「提示工程与结构化输出」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/prompting)。
 
 ## 核心概念
 

@@ -23,7 +23,7 @@
 
 > 动效结论：把窗口当内存管理：分层、配额、换页、写回。这是 agent 工程里最像「系统编程」的一块。
 
-网页版里这段可以逐帧播放：[「上下文窗口与成本模型」动效图解](../index.html#/m/context-window)。
+网页版里这段可以逐帧播放：[「上下文窗口与成本模型」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/context-window)。
 
 ## 核心概念
 

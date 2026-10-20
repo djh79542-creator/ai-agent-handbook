@@ -23,7 +23,7 @@
 
 > 动效结论：上下文工程的核心动作。把它当内存换页 + 检查点，而不是「让模型总结一下」。
 
-网页版里这段可以逐帧播放：[「上下文工程」动效图解](../index.html#/m/context-eng)。
+网页版里这段可以逐帧播放：[「上下文工程」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/context-eng)。
 
 ## 核心概念
 

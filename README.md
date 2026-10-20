@@ -1,25 +1,27 @@
 # AI Agent 技术白皮书
 
+## ▶ 在线交互版：https://ai-agent-knowledge-framework.pages.dev/
+
 > 面向后端 / 前端工程师的 AI Agent 知识框架：一套 14 模块的技术地图、15 张可逐帧播放的动效图解、95 条核心概念、67 个常见坑、40 道面试题与判分要点、29 条上手练习，以及一条八周可交付路线。
 
 这份材料只有一个数据源：[`index.html`](index.html)。分章文档 [`docs/`](docs/) 与全文版 [`HANDBOOK.md`](HANDBOOK.md) 都由 `tools/build-docs.mjs` 从它生成，所以网页和文档不可能对不上。
 
 **它回答的问题不是「AI Agent 是什么」，而是：作为一个已经会写服务、会做系统设计的人，我要补哪几块、按什么顺序补、补到什么程度能被面试追问。**
 
-![全景页](assets/screenshots/overview.png)
+[![全景页](assets/screenshots/overview.png)](https://ai-agent-knowledge-framework.pages.dev/)
 
 ---
 
 ## 两种读法
 
-| | 网页版 [`index.html`](index.html) | 文档版 [`docs/`](docs/) |
+| | 网页版 [在线打开](https://ai-agent-knowledge-framework.pages.dev/) | 文档版 [`docs/`](docs/) |
 | --- | --- | --- |
-| 形态 | 单文件、零依赖、离线可开，双击即用 | 18 个 Markdown 分章 + 1 个全文单文件 |
+| 形态 | 单文件、零依赖，也可 [下载 `index.html`](index.html) 双击离线用 | 18 个 Markdown 分章 + 1 个全文单文件 |
 | 图解 | 15 张 SVG 动效，可单步播放数据包流转 | 同一批图的静态截屏 + 分步文字讲解 |
 | 进度 | 勾选状态存本地 `localStorage` | 交给你的笔记软件 / 知识库 |
 | 适合 | 第一遍建立直觉，面试前复习 | 引用、检索、打印、喂给自己的 agent |
 
-网页版直接 [双击 `index.html`](index.html) 打开即可，不需要构建、不需要网络；也可以 `npx serve .` 或挂到任意静态托管。
+网页版无需构建、无需依赖，在线版即 [https://ai-agent-knowledge-framework.pages.dev/](https://ai-agent-knowledge-framework.pages.dev/)；想离线看，下载 [`index.html`](index.html) 双击即可。每一章的动效图解都能用深链直接打开，例如 [工具调用](https://ai-agent-knowledge-framework.pages.dev/#/m/tool-calling)。
 
 ---
 
@@ -119,7 +121,7 @@ node tools/build-docs.mjs --figures  # 另外重截 docs/figures/*.png（需要�
 
 | 学习路径 | 岗位地图 |
 | --- | --- |
-| ![学习路径](assets/screenshots/learning-path.png) | ![岗位地图](assets/screenshots/jobs-roles.png) |
+| [![学习路径](assets/screenshots/learning-path.png)](https://ai-agent-knowledge-framework.pages.dev/#/path) | [![岗位地图](assets/screenshots/jobs-roles.png)](https://ai-agent-knowledge-framework.pages.dev/#/jobs) |
 
 ---
 

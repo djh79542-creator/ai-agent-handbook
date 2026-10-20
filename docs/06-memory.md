@@ -23,7 +23,7 @@
 
 > 动效结论：和你做过的任何缓存一样：难点不是存取，是写入策略与失效。
 
-网页版里这段可以逐帧播放：[「记忆系统」动效图解](../index.html#/m/memory)。
+网页版里这段可以逐帧播放：[「记忆系统」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/memory)。
 
 ## 核心概念
 

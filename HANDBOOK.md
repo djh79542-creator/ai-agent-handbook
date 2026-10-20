@@ -1,5 +1,7 @@
 # AI Agent 技术白皮书
 
+> **在线交互版（动效图解、逐帧播放、学习进度）：<https://ai-agent-knowledge-framework.pages.dev/>**
+
 > 本文件由 `node tools/build-docs.mjs` 从 `index.html`（唯一数据源）自动生成，内容与 `docs/` 分章完全一致。分章版更适合阅读，本文件适合通读、导出 PDF，或直接喂给你自己的 agent 当检索语料。
 
 # 00 · Agent 不是「更长的 prompt」，是一个带反馈的循环系统
@@ -7,6 +9,8 @@
 > THE FULL MAP　|　面向后端 / 前端工程师的转型知识框架
 
 一个 agent = 模型（决策器）+ 循环（控制流）+ 工具（副作用）+ 记忆（状态）+ 上下文（工作内存）+ 评测（回归）+ 护栏（权限）。你的工程经验在后四项上直接值钱，前两项只需要补概念。
+
+> **在线交互版（动效图解、逐帧播放、学习进度）：<https://ai-agent-knowledge-framework.pages.dev/#/overview>**
 
 ![AI Agent 系统全景](docs/figures/arch.png)
 
@@ -87,7 +91,7 @@
 
 > 动效结论：延迟 = prefill（随输入长度）+ 解码步数 × 每 token 时间。想清楚这两段，优化方向就清楚了。
 
-网页版里这段可以逐帧播放：[「LLM 运行机制」动效图解](index.html#/m/llm-runtime)。
+网页版里这段可以逐帧播放：[「LLM 运行机制」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/llm-runtime)。
 
 ## 核心概念
 
@@ -204,7 +208,7 @@ A：窗口是硬上限，但有效注意力远小于上限——填充率过高�
 
 > 动效结论：把窗口当内存管理：分层、配额、换页、写回。这是 agent 工程里最像「系统编程」的一块。
 
-网页版里这段可以逐帧播放：[「上下文窗口与成本模型」动效图解](index.html#/m/context-window)。
+网页版里这段可以逐帧播放：[「上下文窗口与成本模型」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/context-window)。
 
 ## 核心概念
 
@@ -308,7 +312,7 @@ Prompt 是接口契约：system 段是配置与不变量，user 段是请求参�
 
 > 动效结论：「消除歧义 + 定义可校验的输出」比措辞漂亮重要得多。
 
-网页版里这段可以逐帧播放：[「提示工程与结构化输出」动效图解](index.html#/m/prompting)。
+网页版里这段可以逐帧播放：[「提示工程与结构化输出」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/prompting)。
 
 ## 核心概念
 
@@ -414,7 +418,7 @@ A：不是。超过一定长度后新增内容多是噪声，会稀释注意力�
 
 > 动效结论：理解这一张图，就理解了 agent 的「手」：意图与执行彻底分离。
 
-网页版里这段可以逐帧播放：[「工具调用」动效图解](index.html#/m/tool-calling)。
+网页版里这段可以逐帧播放：[「工具调用」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/tool-calling)。
 
 ## 核心概念
 
@@ -534,7 +538,7 @@ Agent = while 循环 + 状态机。模型是决策函数，工具是副作用，
 
 > 动效结论：用「单步 →」逐帧走完这个循环；想清楚每一层该加什么护栏，比背任何范式定义都有用。
 
-网页版里这段可以逐帧播放：[「Agent 循环与推理范式」动效图解](index.html#/m/agent-loop)。
+网页版里这段可以逐帧播放：[「Agent 循环与推理范式」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/agent-loop)。
 
 ## 核心概念
 
@@ -654,7 +658,7 @@ A：步骤可枚举、有强合规要求、需要严格确定性、或单次调�
 
 > 动效结论：和你做过的任何缓存一样：难点不是存取，是写入策略与失效。
 
-网页版里这段可以逐帧播放：[「记忆系统」动效图解](index.html#/m/memory)。
+网页版里这段可以逐帧播放：[「记忆系统」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/memory)。
 
 ## 核心概念
 
@@ -772,7 +776,7 @@ RAG 是你自己搭的搜索子系统：离线索引（分块+向量）+ 在线�
 
 > 动效结论：绝大多数「模型答错了」其实是没检索到或排序太靠后。先定位在哪一层丢分。
 
-网页版里这段可以逐帧播放：[「RAG 与知识接入」动效图解](index.html#/m/rag)。
+网页版里这段可以逐帧播放：[「RAG 与知识接入」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/rag)。
 
 ## 核心概念
 
@@ -890,7 +894,7 @@ A：强制引用（每条结论带 cite id）、无依据时的固定拒答模�
 
 > 动效结论：上下文工程的核心动作。把它当内存换页 + 检查点，而不是「让模型总结一下」。
 
-网页版里这段可以逐帧播放：[「上下文工程」动效图解](index.html#/m/context-eng)。
+网页版里这段可以逐帧播放：[「上下文工程」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/context-eng)。
 
 ## 核心概念
 
@@ -1006,7 +1010,7 @@ A：作用是上下文隔离与并行。不用则主上下文被探索噪声塞�
 
 > 动效结论：收益 = 上下文隔离 + 并行；代价 = 通信损耗 + 调试难度。和微服务完全同构。
 
-网页版里这段可以逐帧播放：[「多智能体编排」动效图解](index.html#/m/multi-agent)。
+网页版里这段可以逐帧播放：[「多智能体编排」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/multi-agent)。
 
 ## 核心概念
 
@@ -1127,7 +1131,7 @@ MCP 之于 agent，类似 LSP / USB-C：把「工具、数据、提示」从每�
 
 > 动效结论：自建时把内部 API 网关包成一个按意图聚合的 server，比铺几十个零散 server 好得多。
 
-网页版里这段可以逐帧播放：[「工具生态与协议」动效图解](index.html#/m/mcp-tools)。
+网页版里这段可以逐帧播放：[「工具生态与协议」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/mcp-tools)。
 
 ## 核心概念
 
@@ -1242,7 +1246,7 @@ A：面向意图聚合、描述写清使用与不适用场景、参数用枚举�
 
 > 动效结论：Coding agent 最先落地，正因为验证便宜、环境可代码化、动作可回滚。选场景就找同时满足这四条的领域。
 
-网页版里这段可以逐帧播放：[「沙箱与执行环境」动效图解](index.html#/m/sandbox)。
+网页版里这段可以逐帧播放：[「沙箱与执行环境」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/sandbox)。
 
 ## 核心概念
 
@@ -1355,7 +1359,7 @@ A：只回失败用例与首屏错误、按错误类型聚合、完整日志落�
 
 > 动效结论：能讲清「我怎么给 agent 搭评测」的候选人，比能背五种推理范式的候选人稀缺得多。
 
-网页版里这段可以逐帧播放：[「评测体系」动效图解](index.html#/m/evals)。
+网页版里这段可以逐帧播放：[「评测体系」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/evals)。
 
 ## 核心概念
 
@@ -1472,7 +1476,7 @@ agent 的 APM：trace 的最小单位不是 HTTP 请求，而是一次推理。
 
 > 动效结论：能重放的 trace 才有用：固定温度、记录模型版本与参数、mock 外部副作用。
 
-网页版里这段可以逐帧播放：[「可观测性与运维」动效图解](index.html#/m/observability)。
+网页版里这段可以逐帧播放：[「可观测性与运维」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/observability)。
 
 ## 核心概念
 
@@ -1589,7 +1593,7 @@ A：减少输出长度（结构化而非散文）、并行独立工具调用、�
 
 > 动效结论：传统安全假设代码是人写的；agent 里执行意图由模型生成，还会被外部内容影响。
 
-网页版里这段可以逐帧播放：[「安全、护栏与人工介入」动效图解](index.html#/m/safety)。
+网页版里这段可以逐帧播放：[「安全、护栏与人工介入」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/safety)。
 
 ## 核心概念
 
@@ -1692,6 +1696,8 @@ A：按任务临时签发、最小 scope、短 TTL、独立审计身份、密钥
 
 判断标准只有一条：每个阶段结束时，你手里有一个能跑、能演示、能被追问细节的东西。读完文章不算进度。
 
+> **在线交互版（八周路线与进度勾选）：<https://ai-agent-knowledge-framework.pages.dev/#/path>**
+
 ## 四个阶段
 
 ### 阶段 0 · 建立物理直觉　*第 1 周*
@@ -1762,6 +1768,8 @@ A：按任务临时签发、最小 scope、短 TTL、独立审计身份、密钥
 > WHERE YOU FIT
 
 同一个「AI Agent 工程师」头衔下，实际是五种不同的工作。先选方向，再决定把哪几个模块做深。
+
+> **在线交互版（岗位地图交互对比）：<https://ai-agent-knowledge-framework.pages.dev/#/jobs>**
 
 > **关于「热度」：**下面是我基于常见 JD 的定性判断（哪类岗位出现得更频繁、要求更集中），不是统计数据。请以你目标城市/公司近 30 天的真实 JD 为准。
 
@@ -1840,6 +1848,8 @@ A：按任务临时签发、最小 scope、短 TTL、独立审计身份、密钥
 > SELF-TEST　|　共 40 题
 
 用法：先只看问题自己答 30 秒，再展开对照。答不顺的，点标题回到模块重读并补一条练习。
+
+> **在线交互版（考点自测可折叠展开）：<https://ai-agent-knowledge-framework.pages.dev/#/interview>**
 
 ## 高频十题（先过这个）
 

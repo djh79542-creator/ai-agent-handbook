@@ -4,6 +4,8 @@
 
 一个 agent = 模型（决策器）+ 循环（控制流）+ 工具（副作用）+ 记忆（状态）+ 上下文（工作内存）+ 评测（回归）+ 护栏（权限）。你的工程经验在后四项上直接值钱，前两项只需要补概念。
 
+> **在线交互版（动效图解、逐帧播放、学习进度）：<https://ai-agent-knowledge-framework.pages.dev/#/overview>**
+
 ![AI Agent 系统全景](figures/arch.png)
 
 **怎么用这个框架：**按顺序读 14 个模块（每个约 8 分钟），先做「上手练习」再进下一节；到第 12 个模块时开始执行[学习路径](appendix-a-learning-path.md)里的项目；面试前用[考点索引](appendix-c-interview-index.md)自测。

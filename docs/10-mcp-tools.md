@@ -23,7 +23,7 @@ MCP 之于 agent，类似 LSP / USB-C：把「工具、数据、提示」从每�
 
 > 动效结论：自建时把内部 API 网关包成一个按意图聚合的 server，比铺几十个零散 server 好得多。
 
-网页版里这段可以逐帧播放：[「工具生态与协议」动效图解](../index.html#/m/mcp-tools)。
+网页版里这段可以逐帧播放：[「工具生态与协议」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/mcp-tools)。
 
 ## 核心概念
 

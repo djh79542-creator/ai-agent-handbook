@@ -4,6 +4,8 @@
 
 用法：先只看问题自己答 30 秒，再展开对照。答不顺的，点标题回到模块重读并补一条练习。
 
+> **在线交互版（考点自测可折叠展开）：<https://ai-agent-knowledge-framework.pages.dev/#/interview>**
+
 ## 高频十题（先过这个）
 
 ### [4. 工具调用](04-tool-calling.md)

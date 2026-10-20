@@ -24,7 +24,7 @@
 
 > 动效结论：理解这一张图，就理解了 agent 的「手」：意图与执行彻底分离。
 
-网页版里这段可以逐帧播放：[「工具调用」动效图解](../index.html#/m/tool-calling)。
+网页版里这段可以逐帧播放：[「工具调用」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/tool-calling)。
 
 ## 核心概念
 

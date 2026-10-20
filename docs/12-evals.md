@@ -24,7 +24,7 @@
 
 > 动效结论：能讲清「我怎么给 agent 搭评测」的候选人，比能背五种推理范式的候选人稀缺得多。
 
-网页版里这段可以逐帧播放：[「评测体系」动效图解](../index.html#/m/evals)。
+网页版里这段可以逐帧播放：[「评测体系」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/evals)。
 
 ## 核心概念
 

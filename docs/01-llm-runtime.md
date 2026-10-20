@@ -23,7 +23,7 @@
 
 > 动效结论：延迟 = prefill（随输入长度）+ 解码步数 × 每 token 时间。想清楚这两段，优化方向就清楚了。
 
-网页版里这段可以逐帧播放：[「LLM 运行机制」动效图解](../index.html#/m/llm-runtime)。
+网页版里这段可以逐帧播放：[「LLM 运行机制」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/llm-runtime)。
 
 ## 核心概念
 

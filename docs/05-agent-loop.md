@@ -25,7 +25,7 @@ Agent = while 循环 + 状态机。模型是决策函数，工具是副作用，
 
 > 动效结论：用「单步 →」逐帧走完这个循环；想清楚每一层该加什么护栏，比背任何范式定义都有用。
 
-网页版里这段可以逐帧播放：[「Agent 循环与推理范式」动效图解](../index.html#/m/agent-loop)。
+网页版里这段可以逐帧播放：[「Agent 循环与推理范式」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/agent-loop)。
 
 ## 核心概念
 

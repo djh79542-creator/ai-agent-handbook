@@ -24,7 +24,7 @@
 
 > 动效结论：传统安全假设代码是人写的；agent 里执行意图由模型生成，还会被外部内容影响。
 
-网页版里这段可以逐帧播放：[「安全、护栏与人工介入」动效图解](../index.html#/m/safety)。
+网页版里这段可以逐帧播放：[「安全、护栏与人工介入」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/safety)。
 
 ## 核心概念
 

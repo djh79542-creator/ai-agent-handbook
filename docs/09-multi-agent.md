@@ -24,7 +24,7 @@
 
 > 动效结论：收益 = 上下文隔离 + 并行；代价 = 通信损耗 + 调试难度。和微服务完全同构。
 
-网页版里这段可以逐帧播放：[「多智能体编排」动效图解](../index.html#/m/multi-agent)。
+网页版里这段可以逐帧播放：[「多智能体编排」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/multi-agent)。
 
 ## 核心概念
 

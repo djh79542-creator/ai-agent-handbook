@@ -17,6 +17,9 @@ const DOCS = path.join(ROOT, "docs");
 const FIGS = path.join(DOCS, "figures");
 const FIG_TMP = path.join(ROOT, ".figtmp");
 
+// 交互版（动效、进度、逐帧播放）部署在这里，文档只负责静态阅读
+const LIVE = "https://ai-agent-knowledge-framework.pages.dev/";
+
 const DEMAND = { core: "岗位核心能力", hot: "高频考点", plus: "加分项" };
 const BARRIER = { low: "上手门槛低", mid: "门槛中等", high: "门槛较高" };
 
@@ -98,6 +101,7 @@ const dots = n => "●".repeat(n) + "○".repeat(5 - n);
 const fileOf = m => `${String(m.no).padStart(2, "0")}-${m.id}.md`;
 const H = (lvl, t) => "#".repeat(lvl) + " " + t;
 const block = (...lines) => lines.join("\n") + "\n\n";
+const live = (route, what) => `> **在线交互版（${what}）：<${LIVE}${route}>**`;
 
 /* --------------------------- 3. 分章文档 --------------------------- */
 
@@ -124,7 +128,7 @@ function chapter(m, D) {
     "",
     `> 动效结论：${inline(dg.cap)}`,
     "",
-    `网页版里这段可以逐帧播放：[「${m.title}」动效图解](../index.html#/m/${m.id})。`
+    `网页版里这段可以逐帧播放：[「${m.title}」动效图解](${LIVE}#/m/${m.id})。`
   );
 
   s += block(H(2, "核心概念"), ...m.concepts.flatMap(c => [
@@ -160,6 +164,7 @@ function overview(D) {
     H(1, `00 · ${inline(c.t)}`),
     `> ${c.en}　|　面向后端 / 前端工程师的转型知识框架`, "",
     inlineDocs(c.lede, D), "",
+    live("#/overview", "动效图解、逐帧播放、学习进度"), "",
     `![AI Agent 系统全景](figures/arch.png)`, "",
     inlineDocs(c.note, D)
   );
@@ -191,7 +196,7 @@ function overview(D) {
 function appendixA(D) {
   const c = D.COPY.path;
   const ml = id => { const m = D.ordered.find(x => x.id === id); return m ? `[${m.no}. ${inline(m.title)}](${fileOf(m)})` : id; };
-  let s = block(H(1, "附录 A · " + inline(c.t)), `> ${c.en}`, "", inline(c.lede));
+  let s = block(H(1, "附录 A · " + inline(c.t)), `> ${c.en}`, "", inline(c.lede), "", live("#/path", "八周路线与进度勾选"));
 
   s += block(H(2, "四个阶段"));
   for (const st of D.PATH_STAGES) {
@@ -220,7 +225,7 @@ function appendixA(D) {
 function appendixB(D) {
   const c = D.COPY.jobs;
   const ml = id => { const m = D.ordered.find(x => x.id === id); return m ? `[${m.no}. ${inline(m.title)}](${fileOf(m)})` : id; };
-  let s = block(H(1, "附录 B · " + inline(c.t)), `> ${c.en}`, "", inline(c.lede), "", `> ${inlineDocs(c.note, D)}`);
+  let s = block(H(1, "附录 B · " + inline(c.t)), `> ${c.en}`, "", inline(c.lede), "", live("#/jobs", "岗位地图交互对比"), "", `> ${inlineDocs(c.note, D)}`);
 
   s += block(H(2, "五类岗位对比"),
     `| 岗位 | 实际在做什么 | 招聘时看什么 | 切入成本 | 热度 |`,
@@ -247,7 +252,7 @@ function appendixC(D) {
   const c = D.COPY.interview;
   const total = D.MODULES.reduce((a, m) => a + m.interview.length, 0);
   const ml = m => `[${m.no}. ${inline(m.title)}](${fileOf(m)})`;
-  let s = block(H(1, "附录 C · " + inline(c.t)), `> ${c.en}　|　共 ${total} 题`, "", inline(c.lede));
+  let s = block(H(1, "附录 C · " + inline(c.t)), `> ${c.en}　|　共 ${total} 题`, "", inline(c.lede), "", live("#/interview", "考点自测可折叠展开"));
 
   s += block(H(2, "高频十题（先过这个）"));
   for (const id of D.HOT_TEN) {
@@ -336,6 +341,7 @@ const fullText = docs
 
 fs.writeFileSync(path.join(ROOT, "HANDBOOK.md"),
   `# AI Agent 技术白皮书\n\n` +
+  `> **在线交互版（动效图解、逐帧播放、学习进度）：<${LIVE}>**\n\n` +
   `> 本文件由 \`node tools/build-docs.mjs\` 从 \`index.html\`（唯一数据源）自动生成，` +
   `内容与 \`docs/\` 分章完全一致。分章版更适合阅读，本文件适合通读、导出 PDF，或直接喂给你自己的 agent 当检索语料。\n\n` +
   fullText +

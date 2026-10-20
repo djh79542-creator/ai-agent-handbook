@@ -23,7 +23,7 @@ agent 的 APM：trace 的最小单位不是 HTTP 请求，而是一次推理。
 
 > 动效结论：能重放的 trace 才有用：固定温度、记录模型版本与参数、mock 外部副作用。
 
-网页版里这段可以逐帧播放：[「可观测性与运维」动效图解](../index.html#/m/observability)。
+网页版里这段可以逐帧播放：[「可观测性与运维」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/observability)。
 
 ## 核心概念
 

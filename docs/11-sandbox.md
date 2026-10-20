@@ -24,7 +24,7 @@
 
 > 动效结论：Coding agent 最先落地，正因为验证便宜、环境可代码化、动作可回滚。选场景就找同时满足这四条的领域。
 
-网页版里这段可以逐帧播放：[「沙箱与执行环境」动效图解](../index.html#/m/sandbox)。
+网页版里这段可以逐帧播放：[「沙箱与执行环境」动效图解](https://ai-agent-knowledge-framework.pages.dev/#/m/sandbox)。
 
 ## 核心概念
 
